@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+h1{
+    color:beige;
+     font-family: 'Monofett', cursive;
+}
+#head1{
+    text-align:justify;
+    color:cornsilk;
+    font-family: 'Akronim', cursive;
+    margin-left:10px;
+}
+
+#body1{
+    color:cornsilk;
+    font-family: 'Playfair Display', serif;
+    text-align:justify;
+    margin-left: 10px;
+}
+#btn1, #btn2{
+    color:crimson;
+    background-color: beige;
+}
+span{
+    font-size: 25px;
+}

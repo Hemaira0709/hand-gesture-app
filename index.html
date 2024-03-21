@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Hand Gestures app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body style="background-color:firebrick">
+  <div class="container">
+  
+    <center>
+      <h1>Hand gesture app</h1>
+      <br><br>
+
+      <h2 id="head1" style="font-weight: bold;">Instructions:</h2>
+      <h5 id="body1">1. Click start button.<br>
+                     2. As soon as popup appears, please click allow.<br>
+                     3. After that make any hand gesture out of these and click capture image<br>
+                     4. The device will click your Image and identify the gesture you make</h5><br>
+      <h2 id="head1" style="font-weight: bold;">Identification:</h2>
+      <h4 id="body1">This app can identify - <br>
+        <span>&#128077;</span>
+        <span>&#128076;</span>
+        <span>&#129304;</span>
+      </h4>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h3 style="color:cornsilk; font-family: 'Akronim', cursive;">Webcam view</h3>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot()" id="btn1" class="btn">Capture Image</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12"> 
+        <h3 style="color:cornsilk; font-family: 'Akronim', cursive;">Prediction</h3> 
+        <p class="emotion_name" id="final_emoji_name"></p> 
+        <p class="emoji" id="update_emoji"></p> 
+
+      </div>
+
+	    <div class="col-md-4 col-sm-12 col-xs-12"> 
+        <h3 style="color:cornsilk; font-family: 'Akronim', cursive;">Snapshot</h3> 
+        <div id="result"></div> 
+        <br><br> 
+        <button onclick="check();" class="btn" id="btn2">Predict gesture</button> 
+      </div>
+
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
